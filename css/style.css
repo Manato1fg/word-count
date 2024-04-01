@@ -19,11 +19,6 @@ textarea {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
-  textarea {
-    width: 90%;
-  }
-}
 #buttons {
   display: flex;
   justify-content: center;
@@ -70,4 +65,22 @@ textarea {
 .result-row {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 90%;
+    height: 360px;
+    font-size: 1.2rem;
+  }
+  #buttons {
+    width: 90%;
+  }
+  #buttons button {
+    font-size: 1.5rem;
+  }
+  #result {
+    max-width: 90%;
+    font-size: 1.2rem;
+  }
 }
