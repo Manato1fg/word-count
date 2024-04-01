@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>文字数カウント</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1 class="title">文字数カウント</h1>
+      <textarea
+        name="text"
+        rows="4"
+        cols="40"
+        placeholder="カウントしたい文字列を入力してください"
+      ></textarea>
+      <div id="buttons">
+        <button id="clear-btn">クリア</button>
+        <div class="spacer"></div>
+        <button id="count-btn">カウント</button>
+      </div>
+      <div id="result">
+        <div class="result-row">
+          <span class="result-label">文字数：</span>
+          <span id="char-count" class="result-value">0</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">文字数（空白抜き）</span>
+          <span id="char-without-space-count" class="result-value">0</span>
+        </div>
+        <div class="result-row">
+          <span class="result-label">行数：</span>
+          <span id="line-count" class="result-value">0</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
